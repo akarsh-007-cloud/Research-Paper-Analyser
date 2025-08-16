@@ -1,0 +1,9 @@
+{
+    "title": "Practical design and performance of physical reservoir computing using hysteresis",
+    "authors": [
+        "Yuhei Yamada"
+    ],
+    "publication_info": "arXiv:2507.06063v1  [cs.ET]  8 Jul 2025",
+    "abstract": "This paper investigates the design and performance of a physical reservoir computer using hysteresis.  A reservoir composed of independent hysteretic systems modeled by the Preisach model is proposed. The study examines the reservoir's performance in imitating target systems, analyzing the impact of design parameters on accuracy, and identifying limitations.",
+    "key_findings": "- A hysteresis-based reservoir computer model was designed and evaluated.\n- Successful reservoir learning requires the input range to be covered by at least one hysteresis range.\n- The model effectively imitates the second-order NARMA system.\n- Imitation accuracy significantly decreases for NARMA-N systems due to the input's delay effect.\n- Modifying the NARMA-N input to remove the delay improves imitation accuracy.\n- The study provides insights into practically implementing hysteretic reservoirs, though accuracy is not as high as more complex methods."
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <h2>Title</h2>
+    <p>{{ data.title }}</p>
+
+    <h2>Authors</h2>
+    <p>{{ ", ".join(data.authors) }}</p>
+
+    <h2>Publication Info</h2>
+    <p>{{ data.publication_info }}</p>
+
+    <h2>Abstract</h2>
+    <p>{{ data.abstract }}</p>
+
+    <h2>Key Findings</h2>
+    <ul>
+        {% for finding in data.key_findings.split('\n') %}
+        <li>{{ finding }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('download_file', filename=docx_path) }}">Download Word File</a>
+</body>
+</html>
